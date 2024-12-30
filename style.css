@@ -1,0 +1,316 @@
+@charset "utf-8";
+html{
+	/*font-family: "Yuji Syuku", serif;*/
+	/*font-family: "Poppins", sans-serif;
+	font-family: "Dancing Script", cursive;*/
+	font-family: "Noto Sans JP", sans-serif;
+}
+
+body {
+	color: white;
+	background-color: black
+}
+
+.pop {font-family: "Poppins", sans-serif;}
+.dancing {font-family: "Dancing Script", cursive;}
+.yuji {font-family: "Yuji Syuku", serif;}
+.aki {margin-bottom: 60px;}
+
+.container {
+    width: 90%;
+    max-width: 1120px;
+    margin: 0 auto;
+	position: relative;
+}
+
+.flex {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.text-white{
+	color: #ffffff;
+}
+
+header {
+	padding: 27px 0;
+}
+.logo{
+	font-size: 50px;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+	text-decoration: none;
+}
+
+.no {
+	text-decoration: none;
+	list-style: none;
+	color: red;
+}
+
+.logo span {
+	font-family: "Yuji Syuku", serif;
+	color: brown;
+}
+
+.navbar .nav-link {
+	margin-left: 40px;
+    color: white ;
+}
+
+.navbar-nav li a:hover {
+	color: brown !important;
+}
+
+.navbar-toggler .navbar-toggler-icon{
+    color: white;
+}
+.navbar-toggler {
+    background-color: white
+}
+
+/*メイン*/
+#hero {
+	height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+	background-position: center;
+	background-size: cover;
+	height: 540px;
+	border-radius: 30px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 90px;
+	overflow: hidden;
+}
+
+#hero::after {
+	content: '';
+	width: 100%;
+	height: 100%;
+	background-color: black;
+    display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.5;
+	z-index: 1;
+}
+.video{
+    width: 100%;
+	height: 100vh;
+    position: absolute;
+    top: 0;
+	left: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video video{
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+@media screen and (min-width: 768px){
+    .video{
+        min-width: 960px;
+    }
+}
+
+.mm {
+	z-index: 2;
+	color: #ffffff;
+	width: 100%;
+	text-align: center;
+}
+
+.mm p {
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 16px;
+}
+
+.mm h1 {
+	font-size: 40px;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+
+.title {
+	font-size: 50px;
+	font-weight: 900;
+	color: brown;
+	margin-bottom: 40px;
+}
+
+#motto {
+	margin-bottom: 120px;
+}
+
+#motto h3 {
+	font-family: "Yuji Syuku", serif;
+	font-size: 36px;
+	font-weight: 700;
+	margin-bottom: 60px;
+}
+
+#motto img {
+	border-radius: 20px;
+}
+
+.mo {
+	width: 48%
+}
+
+.text {
+	line-height: 2;
+}
+
+.head {
+	font-family: "Dancing Script", cursive;
+	font-size: 200px;
+	font-weight: 700;
+	color: #66709E;
+	opacity: 0.1;
+	position: absolute;
+	top: 0;
+	right: 0;
+	transform: translateY(-30%);
+	z-index: -1;
+}
+
+#menu {
+	margin-bottom: 120px;
+}
+
+.menu_inner {
+	margin-bottom: 40px;
+	position: relative;
+}
+
+.menu1{
+	width: 40%;
+}
+.menub{
+	width: 55%;
+}
+
+#menu img {
+	border-radius: 20px;
+}
+
+#menu h3{
+	font-family: "Yuji Syuku", serif;
+	font-size: 30px;
+	font-weight: 700;
+	margin-bottom: 24px;
+}
+
+#access {
+	margin-top: 120px;
+	margin-bottom: 120px;
+}
+
+#access dl {
+	max-width: 900px;
+	margin-left: auto;
+}
+
+#access dt {
+	width: 30%;
+	padding: 48px 0;
+	font-weight: 500;
+	border-bottom: solid 1px #A0522D
+}
+
+#access dd {
+	width: 65%;
+	padding: 48px 0;
+	border-bottom: solid 1px #A0522D
+}
+
+footer {
+	text-align: center;
+	margin: 90px 0;
+}
+
+.copy {
+	font-size: 12px;
+	margin-top: 40px;
+}
+
+#reservation h3 {
+	font-family: "Yuji Syuku", serif;
+	font-size: 36px;
+	font-weight: 700;
+	margin-bottom: 60px;
+}
+
+#reservation dt {
+	width: 30%;
+	padding: 48px 0;
+	font-weight: 500;
+	border-bottom: solid 1px #A0522D
+}
+
+#reservation dd {
+	width: 65%;
+	padding: 48px 0;
+	border-bottom: solid 1px #A0522D
+}
+
+#gzus h3{
+	font-family: "Yuji Syuku", serif;
+	font-size: 24px;
+}
+
+.gzu{
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 40px;
+}
+
+.gzus{
+	margin-bottom: 60px;
+}
+.gzu .overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(37, 39, 71, 0.7);
+	padding: 30px;
+	display: flex;
+	align-items: flex-end;
+	opacity: 0;
+	transition: all 0.4s ease;
+}
+
+.gzu img{
+	transition: all 0.4s ease;
+	border-radius: 20px;
+}
+
+.gzu:hover img {
+	transform: scale(1.1);
+	border-radius: 20px;
+}
+
+.gzu:hover .overlay {
+	opacity: 1;
+}
+
+#sidemenu img{
+	border-radius: 20px;
+}
